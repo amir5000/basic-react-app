@@ -15,8 +15,6 @@ class UserCards extends Component {
     }
 
     async toggle(url) {
-        console.log(this);
-        
         if (url) {
             const userProfileData = await fetch(url).then(response => response.json()).then(data => data);
             this.setState({

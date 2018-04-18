@@ -12,7 +12,7 @@ const UserModal = ({ userProfileData, toggleModal }) => {
             <ModalHeader toggle={toggle}>User Name: {userProfileData.login}</ModalHeader>
             <ModalBody>
                 <img src={userProfileData.avatar_url} alt={userProfileData.login} />
-                <p>followers: {userProfileData.followers} | following: {userProfileData.following}</p>
+                <p>followers: {userProfileData.followers} | following: {userProfileData.following} | public repos: {userProfileData.public_repos}</p>
             </ModalBody>
             <ModalFooter>
                 <Button color="secondary" onClick={toggle}>Cancel</Button>
