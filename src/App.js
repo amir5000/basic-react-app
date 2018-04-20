@@ -13,7 +13,7 @@ class App extends Component {
   
 
   async componentDidMount(){
-    const url = 'https://api.github.com/users?access_token=f7afb918fe1dee3a92777eb442e1857f9a4ac4e1&since=13893442';
+    const url = 'https://api.github.com/users?access_token=YOUR_ACCESS_TOKEN_HERE';
 
     const data = await fetch(url).then(response => response.json()).then(data => data);
     this.setState({
